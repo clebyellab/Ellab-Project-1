@@ -27,6 +27,61 @@ span {
     color: #1769aa;
 }
 
+/* NAVIGATION BAR */
+
+header {
+    background-color: #ffe4ec;
+    padding: 20px 10%;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(231, 84, 128, 0.15);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #d6336c;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e75480;
+}
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
 
 /* =================================
    NAVIGATION BAR
